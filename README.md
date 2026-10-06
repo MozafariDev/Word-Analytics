@@ -71,12 +71,6 @@ If either limit becomes negative, the number turns red.
 
 ---
 
-## 🌐 Live Demo
-
-**Website:** https://mozafaridev.github.io/word-analytics/
-
----
-
 ## 📬 Contact
 
 - **Website:** https://mozafaridev.github.io
