@@ -46,7 +46,9 @@ word-analytics/
 No installation or build step required.
 
 ---
+## run it now ✅️
 
+open https://mozafari-analytics.vercel.app in a modern browser.
 ## 🔍 How It Works
 
 The JavaScript code listens to the `input` event on the textarea and runs four operations:
@@ -65,7 +67,7 @@ If either limit becomes negative, the number turns red.
 | Breakpoint | Layout |
 | --- | --- |
 | **> 520px** | Two-column layout (textarea + outputs side-by-side) |
-| **≤ 520px** | Vertical layout (textarea on top, outputs below) |
+| **≤ 520px** | Vertical layout (tow) |
 | **≤ 400px** | Smaller font size for textarea |
 | **≤ 260px** | Compact layout with 2×2 grid |
 
@@ -73,7 +75,7 @@ If either limit becomes negative, the number turns red.
 
 ## 📬 Contact
 
-- **Website:** https://mozafaridev.github.io
+- **Website:** https://mozafari.vercel.app
 - **GitHub:** https://github.com/MozafariDev
 - **Email:** tahamozafari8660@gmail.com
 
