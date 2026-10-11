@@ -49,6 +49,8 @@ No installation or build step required.
 ## run it now ✅️
 
 open https://mozafari-analytics.vercel.app in a modern browser.
+
+---
 ## 🔍 How It Works
 
 The JavaScript code listens to the `input` event on the textarea and runs four operations:
