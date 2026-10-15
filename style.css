@@ -2,57 +2,77 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  user-select: none;
 }
 
 body {
-  font-family: "Inter", "mono space";
+  font-family: "Inter", tahoma;
   color: #333;
   text-align: center;
+  background: #e1e8eb;
+}
+.container_head a,
+.container_head a:visited,
+.container_heada:hover,
+.container_head a:active,
+.container_head a:focus {
+  text-decoration: none;
+  color: inherit;
 }
 .container_head {
   height: fit-content;
-  background: linear-gradient(to right, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(
+    to right,
+    rgba(101, 0, 163, 0.9),
+    rgba(24, 120, 175, 0.9)
+  );
   width: 100%;
   text-align: center;
   padding: 10px;
   padding-bottom: 30px;
+  height: 156px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header_span {
+  font-weight: 300;
 }
 .header_title {
   color: #e0e0e0;
-  font-size: 25px;
+  font-size: 40px;
+  letter-spacing: 3px;
+  font-weight: bold;
 }
 .second_title {
-  font-size: 12px;
+  font-size: 15px;
 }
 .container_input {
   all: unset;
   resize: none;
   width: 300px;
-  height: 200px;
+  height: 250px;
   padding: 10px;
-  border: 1px solid steelblue;
   background-color: #f4f4f4;
-  border-radius: 4px 0px 0px 4px;
+  border-radius: 10px 0px 0px 10px;
   text-align: left;
 }
 .output-title {
-  font-size: 10px;
+  font-size: 13px;
+  opacity: 0.8;
 }
 .main_outputs {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  width: 200px;
-  height: 221.5px;
-  border: 1px solid steelblue;
+  width: 250px;
+  height: 271.5px;
   padding: 10px;
-  background-color: rgb(241, 243, 242);
-  border-radius: 0px 4px 4px 0px;
+  background-color: rgb(226, 228, 227);
+  border-radius: 0px 10px 10px 0px;
 }
 .container_main {
   display: flex;
-  margin-top: -20px;
+  margin-top: -30px;
   width: 100%;
   z-index: 1000;
   flex-wrap: wrap;
@@ -64,10 +84,10 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 10px;
+  font-size: 15px;
   gap: 10px;
-  border-left: 1px solid #3337;
-  border-bottom: 1px solid #3337;
+  border-left: 1px solid rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 .container_footer {
   display: inline-block;
@@ -76,7 +96,6 @@ body {
   margin-top: 30px;
   padding: 10px;
   border-radius: 3px;
-  border: 2px solid steelblue;
 }
 .developer_name {
   font-size: 10px;
@@ -84,9 +103,17 @@ body {
 .twitter {
   border-bottom: none;
   border-left: none;
+  transition: color 0.3s ease;
+}
+.footer-links {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  justify-content: center;
 }
 .redit {
   border-bottom: none;
+  transition: color 0.3s ease;
 }
 .words {
   border-left: none;
@@ -94,20 +121,30 @@ body {
 .max_output {
   color: rgb(253, 33, 33);
 }
-@media (max-width: 520px) {
+
+@media (max-width: 570px) {
   .container_input {
     flex-grow: 2;
-    border-radius: 4px 4px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
     overflow-wrap: break-word;
     word-wrap: break-word;
     letter-spacing: 1px;
   }
+  .container_head {
+    height: 120px;
+  }
   .main_outputs {
-    border-radius: 0px 0px 4px 4px;
+    border-radius: 0px 0px 10px 10px;
     flex-grow: 2;
-    height: 30vh;
+    height: 15vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
+  }
+  .header_title {
+    font-size: 30px;
+  }
+  .second_title {
+    font-size: 15px;
   }
   .container_main {
     padding: 10px;
@@ -116,7 +153,7 @@ body {
   }
   .output_box {
     border: none;
-    border-left: 1px solid #3337;
+    border-left: 1px solid rgba(0, 0, 0, 0.08);
   }
   .words {
     border-left: none;
@@ -128,23 +165,18 @@ body {
     margin-bottom: 50px;
   }
   .container_input {
-    height: 60vh;
+    height: 50vh;
   }
 }
-@media (max-width: 400px) {
-  .container_input {
-    font-size: 14px;
-  }
-}
-@media (max-width: 260px) {
+@media (max-width: 330px) {
   .header_title {
-    font-size: 18px;
+    font-size: 20px;
   }
   .second_title {
     font-size: 10px;
   }
   .container_input {
-    font-size: 12px;
+    font-size: 14px;
   }
   .output_box {
     display: flex;
@@ -153,8 +185,8 @@ body {
     justify-content: center;
     font-size: 10px;
     gap: 10px;
-    border-left: 1px solid #3337;
-    border-bottom: 1px solid #3337;
+    border-left: 1px solid rgba(0, 0, 0, 0.08);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   }
   .twitter {
     border-bottom: none;
