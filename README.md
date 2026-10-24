@@ -32,7 +32,12 @@ A simple, client-side text analytics tool built with HTML, CSS, and JavaScript. 
 word-analytics/
 ├── index.html
 ├── style.css
-└── script.js
+├── sitemap.xml
+├── robots.txt
+├── README.md
+├── script.js
+└── fonts /
+  └── Lalezar-Regular.ttf
 ```
 
 ---
