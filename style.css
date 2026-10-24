@@ -5,10 +5,17 @@
 }
 
 body {
-  font-family: "Inter", tahoma;
+  font-family: "Lalezar", "Inter", monospace, tahoma;
   color: #333;
   text-align: center;
   background: #e1e8eb;
+}
+@font-face {
+  font-family: "Lalezar";
+  src: url("fonts/Lalezar-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 .container_head a,
 .container_head a:visited,
@@ -38,7 +45,7 @@ body {
   font-weight: 300;
 }
 .header_title {
-  color: #e0e0e0;
+  color: #f7f7ec;
   font-size: 40px;
   letter-spacing: 3px;
   font-weight: bold;
@@ -52,7 +59,7 @@ body {
   width: 300px;
   height: 250px;
   padding: 10px;
-  background-color: #f4f4f4;
+  background-color: #f7f7ec;
   border-radius: 10px 0px 0px 10px;
   text-align: left;
 }
@@ -98,12 +105,12 @@ body {
   border-radius: 3px;
 }
 .developer_name {
-  font-size: 10px;
+  font-size: 14px;
 }
 .twitter {
   border-bottom: none;
   border-left: none;
-  transition: color 0.3s ease;
+  transition: color 0.2s ease;
 }
 .footer-links {
   display: flex;
